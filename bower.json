@@ -1,0 +1,19 @@
+{
+  "name": "carawebs-code",
+  "version": "1.0.0",
+  "authors": [
+    "David Egan <david@carawebs.com>"
+  ],
+  "description": "WordPress plugin",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "highlightjs": "~8.8.0"
+  }
+}
