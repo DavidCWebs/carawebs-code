@@ -175,6 +175,10 @@ class Plugin_Name {
 		// -------------------------------------------------------------------------
 		$this->loader->add_action( 'init', $plugin_public, 'register_shortcodes' );
 
+		// Reorder wpautop
+		// -------------------------------------------------------------------------
+		$this->loader->add_action( 'init', $plugin_public, 'remove_autop' );
+
 	}
 
 	/**

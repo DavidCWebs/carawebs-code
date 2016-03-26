@@ -88,6 +88,13 @@ class Plugin_Name_Public {
 
 	}
 
+	public function remove_autop() {
+
+		remove_filter( 'the_content', 'wpautop' );
+		add_filter( 'the_content', 'wpautop' , 12);
+
+	}
+
 	/**
 	 * Register the stylesheets for the public-facing side of the site.
 	 *
