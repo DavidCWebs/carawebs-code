@@ -1,13 +1,6 @@
 <?php
 
 /**
- * The plugin bootstrap file
- *
- * This file is read by WordPress to generate the plugin information in the plugin
- * admin area. This file also includes all of the dependencies used by the plugin,
- * registers the activation and deactivation functions, and defines a function
- * that starts the plugin.
- *
  * @link              http://example.com
  * @since             1.0.0
  * @package           Plugin_Name
@@ -27,7 +20,7 @@
 
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {
-	die;
+    die;
 }
 
 /**
@@ -35,8 +28,8 @@ if ( ! defined( 'WPINC' ) ) {
  * This action is documented in includes/class-carawebs-code-activator.php
  */
 function activate_plugin_name() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-carawebs-code-activator.php';
-	Plugin_Name_Activator::activate();
+    require_once plugin_dir_path( __FILE__ ) . 'includes/class-carawebs-code-activator.php';
+    Plugin_Name_Activator::activate();
 }
 
 /**
@@ -44,8 +37,8 @@ function activate_plugin_name() {
  * This action is documented in includes/class-carawebs-code-deactivator.php
  */
 function deactivate_plugin_name() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-carawebs-code-deactivator.php';
-	Plugin_Name_Deactivator::deactivate();
+    require_once plugin_dir_path( __FILE__ ) . 'includes/class-carawebs-code-deactivator.php';
+    Plugin_Name_Deactivator::deactivate();
 }
 
 register_activation_hook( __FILE__, 'activate_plugin_name' );
@@ -68,8 +61,8 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-carawebs-code.php';
  */
 function run_plugin_name() {
 
-	$plugin = new Plugin_Name();
-	$plugin->run();
+    $plugin = new Plugin_Name();
+    $plugin->run();
 
 }
 run_plugin_name();
